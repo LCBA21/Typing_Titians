@@ -1,10 +1,13 @@
 import matplotlib.pyplot as p
 import time as t
+import random
+
 
 times=[]
 mistakes=0
+word=["python","programming","javascript","Numpy","android","java","sql","machine learning","Dev Ops"]
 
-print("This program will help user type faster.You are required to type python four(4) times")
+print("This program will help user type faster.You are required to type "+str(word[random_word])+" four(4) times")
 input("How fast can you type....")
 while len(times) <4:
     start=t.time()
@@ -14,7 +17,7 @@ while len(times) <4:
 
     times.append(user_speed)
 
-    if(user_word.lower() != "python"):
+    if(user_word.lower() != word[random_word]):
         mistakes+=1
 
 print("Mistakes: ",str(mistakes))
