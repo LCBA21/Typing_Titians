@@ -27,5 +27,10 @@ t.sleep(4)
 x=[1,2,3,4]
 y=times
 p.plot(x,y)
+legend=["1","2","3","4"]
+p.xticks(x,legend)
+p.title("Typing speed")
+p.ylabel("Time in seconds")
+p.xlabel("Number of Attempts"
 p.show()
 
